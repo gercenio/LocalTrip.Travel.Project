@@ -1,0 +1,9 @@
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\bin\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.deps.json
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\bin\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.dll
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\bin\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.pdb
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\obj\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.csprojAssemblyReference.cache
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\obj\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.csproj.CoreCompileInputs.cache
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\obj\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.AssemblyInfoInputs.cache
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\obj\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.AssemblyInfo.cs
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\obj\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.dll
+D:\Developer\2020\localtrips\src\LocalTrip.Travel.Project\LocalTrip.Travel.Project.Domain\obj\Debug\netcoreapp2.1\LocalTrip.Travel.Project.Domain.pdb
