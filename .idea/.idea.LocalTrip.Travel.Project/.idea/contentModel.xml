@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Adapters" t="Include">
+        <e p="Api" t="Include" />
+      </e>
+      <e p="Application" t="Include" />
+      <e p="Domain" t="Include" />
+      <e p="Infrastructure" t="Include" />
+      <e p="LocalTrip.Core.Api" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="LocalTrip.Core.Api.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LocalTrip.Core.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="LocalTrip.Travel.Project.Application" t="IncludeRecursive">
+        <e p="Behaviors" t="Include">
+          <e p="FailFastValidationBehavior.cs" t="Include" />
+          <e p="LoggingBehavior.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Commands" t="Include">
+          <e p="Request" t="Include">
+            <e p="FindTripCommandRequest.cs" t="Include" />
+          </e>
+          <e p="Response" t="Include">
+            <e p="FindTripCommandResponse.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Core" t="Include">
+          <e p="Response.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="UseCase" t="Include">
+            <e p="FindTripHandler.cs" t="Include" />
+          </e>
+        </e>
+        <e p="LocalTrip.Travel.Project.Application.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LocalTrip.Travel.Project.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Validations" t="Include">
+          <e p="FindTripValidation.cs" t="Include" />
+        </e>
+      </e>
+      <e p="LocalTrip.Travel.Project.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="ApiAccount.cs" t="Include" />
+          <e p="DestinationTrip.cs" t="Include" />
+          <e p="ExcludeItensOnTrip.cs" t="Include" />
+          <e p="ImagensTrip.cs" t="Include" />
+          <e p="IncludeItensOnTrip.cs" t="Include" />
+          <e p="OrigemTrip.cs" t="Include" />
+          <e p="Trip.cs" t="Include" />
+        </e>
+        <e p="Enuns" t="Include">
+          <e p="TypeAccommodations.cs" t="Include" />
+        </e>
+        <e p="LocalTrip.Travel.Project.Domain.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LocalTrip.Travel.Project.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="LocalTrip.Travel.Project.Infra.Data" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="MySql" t="Include">
+            <e p="MySqlContext.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Dtos" t="Include">
+          <e p="ApiAccountDto.cs" t="Include" />
+          <e p="TripDto.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IApiAccountRepository.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="ITripRepository.cs" t="Include" />
+        </e>
+        <e p="LocalTrip.Travel.Project.Infra.Data.csproj" t="IncludeRecursive" />
+        <e p="Mappers" t="Include">
+          <e p="ApiAccountDtoMapper.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LocalTrip.Travel.Project.Infra.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repository" t="Include">
+          <e p="ApiAccountRepository.cs" t="Include" />
+          <e p="Repository.cs" t="Include" />
+          <e p="TripRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="LocalTrip.Travel.Project.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_LocalTrip.Travel.Project.1932963404.00" t="ExcludeRecursive" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.deps.json
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.pdb
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.csprojAssemblyReference.cache
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.AssemblyInfoInputs.cache
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.AssemblyInfo.cs
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.pdb
