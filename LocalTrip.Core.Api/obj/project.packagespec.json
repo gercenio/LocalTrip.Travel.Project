@@ -17,7 +17,14 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/LocalTrip.Travel.Project.Application.csproj": {
+            "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/LocalTrip.Travel.Project.Application.csproj"
+          },
+          "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Data/LocalTrip.Travel.Project.Infra.Data.csproj": {
+            "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Data/LocalTrip.Travel.Project.Infra.Data.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -28,6 +35,48 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "FluentValidation": {
+          "target": "Package",
+          "version": "[8.6.2, )"
+        },
+        "MediatR": {
+          "target": "Package",
+          "version": "[8.0.1, )"
+        },
+        "MediatR.Extensions.Microsoft.DependencyInjection": {
+          "target": "Package",
+          "version": "[8.0.0, )"
+        },
+        "Microsoft.AspNetCore.Authentication.JwtBearer": {
+          "target": "Package",
+          "version": "[3.1.2, )"
+        },
+        "Microsoft.Extensions.Identity.Core": {
+          "target": "Package",
+          "version": "[3.1.2, )"
+        },
+        "Microsoft.Extensions.PlatformAbstractions": {
+          "target": "Package",
+          "version": "[1.1.0, )"
+        },
+        "Swashbuckle": {
+          "target": "Package",
+          "version": "[5.6.0, )"
+        },
+        "Swashbuckle.AspNetCore": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        },
+        "Swashbuckle.AspNetCore.Swagger": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        },
+        "Swashbuckle.AspNetCore.SwaggerGen": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

@@ -1,10 +1,8 @@
 using System;
-using LocalTrip.Travel.Project.Application.Commands.Response;
-using MediatR;
 
-namespace LocalTrip.Travel.Project.Application.Commands.Request
+namespace LocalTrip.Core.Api.ViewModels
 {
-    public class FindTripCommandRequest :IRequest<FindTripCommandResponse>
+    public class GetTripViewModel
     {
         public string CityOrigem { get; set; }
         public string CountryOrigem { get; set; }

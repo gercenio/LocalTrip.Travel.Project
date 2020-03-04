@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/LocalTrip.Travel.Project.Application.csproj",
-    "projectName": "LocalTrip.Travel.Project.Application",
-    "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/LocalTrip.Travel.Project.Application.csproj",
-    "outputPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/obj/",
+    "projectUniqueName": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Test/LocalTrip.Travel.Project.Test.csproj",
+    "projectName": "LocalTrip.Travel.Project.Test",
+    "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Test/LocalTrip.Travel.Project.Test.csproj",
+    "outputPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Test/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -17,11 +17,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {
-          "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Data/LocalTrip.Travel.Project.Infra.Data.csproj": {
-            "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Data/LocalTrip.Travel.Project.Infra.Data.csproj"
-          }
-        }
+        "projectReferences": {}
       }
     },
     "warningProperties": {
@@ -33,13 +29,21 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
-        "FluentValidation": {
+        "Microsoft.NET.Test.Sdk": {
           "target": "Package",
-          "version": "[8.6.1, )"
+          "version": "[16.2.0, )"
         },
-        "MediatR": {
+        "coverlet.collector": {
           "target": "Package",
-          "version": "[8.0.1, )"
+          "version": "[1.0.1, )"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.4.0, )"
         }
       },
       "imports": [

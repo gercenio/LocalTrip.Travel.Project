@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.2.0/build/netcoreapp1.0" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Adapters" t="Include">
         <e p="Api" t="Include" />
@@ -12,10 +18,20 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Configurations" t="Include">
+          <e p="SigningConfigurations.cs" t="Include" />
+          <e p="TokenConfigurations.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="AccountController.cs" t="Include" />
+          <e p="AutheticationController.cs" t="Include" />
+          <e p="TripController.cs" t="Include" />
         </e>
         <e p="LocalTrip.Core.Api.csproj" t="IncludeRecursive" />
+        <e p="Mappers" t="Include">
+          <e p="AccountApiViewModelMapper.cs" t="Include" />
+          <e p="GetTripViewModelMapper.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -28,7 +44,10 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="WeatherForecast.cs" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="AccountApiViewModel.cs" t="Include" />
+          <e p="GetTripViewModel.cs" t="Include" />
+        </e>
       </e>
       <e p="LocalTrip.Travel.Project.Application" t="IncludeRecursive">
         <e p="Behaviors" t="Include">
@@ -38,9 +57,11 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Commands" t="Include">
           <e p="Request" t="Include">
+            <e p="AuthenticationCommandRequest.cs" t="Include" />
             <e p="FindTripCommandRequest.cs" t="Include" />
           </e>
           <e p="Response" t="Include">
+            <e p="AuthenticationCommandResponse.cs" t="Include" />
             <e p="FindTripCommandResponse.cs" t="Include" />
           </e>
         </e>
@@ -49,6 +70,7 @@
         </e>
         <e p="Handlers" t="Include">
           <e p="UseCase" t="Include">
+            <e p="AuthenticationHandler.cs" t="Include" />
             <e p="FindTripHandler.cs" t="Include" />
           </e>
         </e>
@@ -96,10 +118,12 @@
         </e>
         <e p="Dtos" t="Include">
           <e p="ApiAccountDto.cs" t="Include" />
+          <e p="ProviderDto.cs" t="Include" />
           <e p="TripDto.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
           <e p="IApiAccountRepository.cs" t="Include" />
+          <e p="IProviderRepository.cs" t="Include" />
           <e p="IRepository.cs" t="Include" />
           <e p="ITripRepository.cs" t="Include" />
         </e>
@@ -116,12 +140,26 @@
         </e>
         <e p="Repository" t="Include">
           <e p="ApiAccountRepository.cs" t="Include" />
+          <e p="ProviderRepository.cs" t="Include" />
           <e p="Repository.cs" t="Include" />
           <e p="TripRepository.cs" t="Include" />
         </e>
       </e>
       <e p="LocalTrip.Travel.Project.sln" t="IncludeFlat" />
+      <e p="LocalTrip.Travel.Project.Test" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="LocalTrip.Travel.Project.Test.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LocalTrip.Travel.Project.Test.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="UnitTest1.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Test" t="Include" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_LocalTrip.Travel.Project.1932963404.00" t="ExcludeRecursive" />
