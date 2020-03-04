@@ -13,5 +13,10 @@ namespace LocalTrip.Travel.Project.Infra.Data.Mappers
                 AccessKey = entity.AccessKey
             };
         }
+
+        public static ApiAccount MapToDomain(this ApiAccountDto dto)
+        {
+            return new ApiAccount(dto.UserCode,dto.AccessKey);
+        }
     }
 }
