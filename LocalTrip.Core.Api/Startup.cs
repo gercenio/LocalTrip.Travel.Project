@@ -41,7 +41,7 @@ namespace LocalTrip.Core.Api
        
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddDataProtection().DisableAutomaticKeyGeneration();
             
@@ -68,18 +68,14 @@ namespace LocalTrip.Core.Api
                 paramsValidation.IssuerSigningKey = signingConfigurations.Key;
                 paramsValidation.ValidAudience = tokenConfigurations.Audience;
                 paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
-                // Valida a assinatura de um token recebido
+              
                 paramsValidation.ValidateIssuerSigningKey = true;
-                // Verifica se um token recebido ainda é válido
+              
                 paramsValidation.ValidateLifetime = true;
-                // Tempo de tolerância para a expiração de um token (utilizado
-                // caso haja problemas de sincronismo de horário entre diferentes
-                // computadores envolvidos no processo de comunicação)
+               
                 paramsValidation.ClockSkew = TimeSpan.Zero;
             });
             
-            // Ativa o uso do token como forma de autorizar o acesso
-            // a recursos deste projeto
             services.AddAuthorization(auth =>
             {
                 auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
@@ -100,18 +96,13 @@ namespace LocalTrip.Core.Api
 
             services.Configure<IdentityOptions>(options =>
             {
-                // Password settings
                 options.Password.RequireDigit = true;
                 options.Password.RequiredLength = 8;
                 options.Password.RequireNonAlphanumeric = true;
                 options.Password.RequireUppercase = true;
                 options.Password.RequireLowercase = true;
-
-                // Lockout settings
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
                 options.Lockout.MaxFailedAccessAttempts = 10;
-
-                // User settings
                 options.User.RequireUniqueEmail = true;
             });
             
@@ -119,8 +110,8 @@ namespace LocalTrip.Core.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo()
                 {
-                    Title = "HIEA.Lab Meu Einstein"
-                    ,Description = "HIEA.Lab API REST criada com o ASP.NET Core"
+                    Title = "Local Trip's .Lab"
+                    ,Description = "Localtrip.Lab API REST criada com o ASP.NET Core"
                     ,Version = "0.0.1"
                 });
                 

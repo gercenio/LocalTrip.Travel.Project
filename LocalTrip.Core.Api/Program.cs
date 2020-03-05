@@ -17,7 +17,6 @@ namespace LocalTrip.Core.Api
     {
         public static void Main(string[] args)
         {
-            //CreateHostBuilder(args).Build().Run();
             CurrentDirectoryHelpers.SetCurrentDirectory();
 
             Log.Logger = new LoggerConfiguration()
@@ -45,10 +44,7 @@ namespace LocalTrip.Core.Api
                     o.Limits.KeepAliveTimeout = TimeSpan.FromMinutes(30);
                 });
         
-        /*
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });*/
+       
     }
     internal class CurrentDirectoryHelpers
         {

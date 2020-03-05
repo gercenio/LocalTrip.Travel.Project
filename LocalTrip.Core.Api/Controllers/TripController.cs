@@ -5,6 +5,7 @@ using LocalTrip.Core.Api.Mappers;
 using LocalTrip.Core.Api.ViewModels;
 using LocalTrip.Travel.Project.Application.Core;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,6 +13,7 @@ namespace LocalTrip.Core.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize("Bearer")]
     public class TripController : ControllerBase
     {
         private readonly IMediator _mediator;
