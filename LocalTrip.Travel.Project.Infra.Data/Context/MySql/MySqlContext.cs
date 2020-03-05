@@ -44,9 +44,9 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ApiAccountDto>().ToTable("apiaccount", "trip");
-            modelBuilder.Entity<TripDto>().ToTable("trip", "trip");
-            modelBuilder.Entity<ProviderDto>().ToTable("provider", "trip");
+            modelBuilder.Entity<ApiAccountDto>().ToTable("apiaccount", "TripDb");
+            modelBuilder.Entity<TripDto>().ToTable("trip", "TripDb");
+            modelBuilder.Entity<ProviderDto>().ToTable("provider", "TripDb");
 
             base.OnModelCreating(modelBuilder);
         }
