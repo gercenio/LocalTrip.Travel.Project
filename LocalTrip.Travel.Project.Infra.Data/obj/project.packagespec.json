@@ -33,6 +33,10 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "Microsoft.AspNetCore": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
         "Microsoft.Extensions.Configuration": {
           "target": "Package",
           "version": "[3.1.2, )"
@@ -42,6 +46,10 @@
           "version": "[3.1.2, )"
         },
         "MySql.Data.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[8.0.19, )"
+        },
+        "MySql.Data.EntityFrameworkCore.Design": {
           "target": "Package",
           "version": "[8.0.19, )"
         }

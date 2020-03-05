@@ -14,6 +14,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
@@ -40,7 +41,9 @@ namespace LocalTrip.Core.Api
        
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            //services.AddMvc();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddDataProtection().DisableAutomaticKeyGeneration();
             
             AddApplicationServices(services);
             
@@ -132,7 +135,7 @@ namespace LocalTrip.Core.Api
             });
             services.AddOptions();
             
-            //services.AddSingleton<IConfiguration>(Configuration);
+            services.AddSingleton<IConfiguration>(Configuration);
             
             services.AddControllers();
         }
@@ -168,10 +171,9 @@ namespace LocalTrip.Core.Api
         private static void AddApplicationServices(IServiceCollection services)
         {
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
-            
+            services.AddScoped<ITripRepository, TripRepository>();
             services.AddLogging();
             AddMediatr(services);
-            
             
         }
         

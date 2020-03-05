@@ -28,6 +28,9 @@
           <e p="TripController.cs" t="Include" />
         </e>
         <e p="LocalTrip.Core.Api.csproj" t="IncludeRecursive" />
+        <e p="Logs" t="Include">
+          <e p="LogFrom_ProgramMain.txt" t="Include" />
+        </e>
         <e p="Mappers" t="Include">
           <e p="AccountApiViewModelMapper.cs" t="Include" />
           <e p="GetTripViewModelMapper.cs" t="Include" />
@@ -83,6 +86,7 @@
           </e>
         </e>
         <e p="Validations" t="Include">
+          <e p="AuthenticationValidation.cs" t="Include" />
           <e p="FindTripValidation.cs" t="Include" />
         </e>
       </e>
@@ -130,6 +134,7 @@
         <e p="LocalTrip.Travel.Project.Infra.Data.csproj" t="IncludeRecursive" />
         <e p="Mappers" t="Include">
           <e p="ApiAccountDtoMapper.cs" t="Include" />
+          <e p="TripDtoMapper.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
