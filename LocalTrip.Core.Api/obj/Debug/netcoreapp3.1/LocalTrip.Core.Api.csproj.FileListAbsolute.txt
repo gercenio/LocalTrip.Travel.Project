@@ -20,6 +20,8 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
@@ -57,6 +59,7 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/MySql.Data.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Ubiety.Dns.Core.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/MySql.Data.EntityFrameworkCore.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/MySql.Data.EntityFrameworkCore.Design.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Serilog.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Serilog.AspNetCore.dll
@@ -100,6 +103,3 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/obj/Debug/netcoreapp3.1/LocalTrip.Core.Api.csproj.CopyComplete
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/obj/Debug/netcoreapp3.1/LocalTrip.Core.Api.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/obj/Debug/netcoreapp3.1/LocalTrip.Core.Api.pdb
-/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/MySql.Data.EntityFrameworkCore.Design.dll
-/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
-/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll

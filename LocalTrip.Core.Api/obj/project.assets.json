@@ -9555,6 +9555,7 @@
       "Microsoft.Extensions.Identity.Core >= 3.1.2",
       "Microsoft.Extensions.PlatformAbstractions >= 1.1.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.19",
+      "MySql.Data.EntityFrameworkCore.Design >= 8.0.19",
       "Serilog >= 2.9.0",
       "Serilog.AspNetCore >= 3.2.0",
       "Swashbuckle >= 5.6.0",
@@ -9638,6 +9639,10 @@
             "version": "[1.1.0, )"
           },
           "MySql.Data.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.19, )"
+          },
+          "MySql.Data.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "[8.0.19, )"
           },

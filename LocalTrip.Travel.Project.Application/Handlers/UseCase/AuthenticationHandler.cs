@@ -22,13 +22,44 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
 
         public async Task<AuthenticationCommandResponse> Handle(AuthenticationCommandRequest request, CancellationToken cancellationToken)
         {
-            throw new System.NotImplementedException();
+            var account = OnValidAccountApiData(request.UserCode);
+            if (account == null || account.AccessKey == null)
+            {
+                var ResponseCommandOne = new AuthenticationCommandResponse()
+                {
+                    Authorized = false
+                };
+                
+                ResponseCommandOne.AddError("Usuario não encontrado, por favor verifique !!!");
+                return ResponseCommandOne;
+            }
+
+            if (account.AccessKey != request.AccessKey)
+            {
+                var ResponseCommandTwo = new AuthenticationCommandResponse()
+                {
+                    Authorized = false
+                };
+                
+                ResponseCommandTwo.AddError("Senha invalida, por favor verifique !!!");
+                return ResponseCommandTwo;
+            }
+
+            var ResponseCommand = new AuthenticationCommandResponse()
+            {
+                Authorized = true,
+                Errors = { }
+            };
+            
+            return ResponseCommand;
+            
         }
 
-        private ApiAccount GetAccountApiData(string userCode)
+        private ApiAccount OnValidAccountApiData(string userCode)
         {
             var result = new ApiAccount(null,null);
-            var _result = _apiAccountRepository.GetAll().Where(m => m.UserCode == userCode).Single();
+            var _result = _apiAccountRepository
+                .GetAll().Where(m => m.UserCode == userCode).Single();
             if (_result != null)
             {
                 return _result.MapToDomain();
