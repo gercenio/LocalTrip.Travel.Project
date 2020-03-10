@@ -12,6 +12,7 @@
           "Microsoft.AspNetCore": "2.1.1",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "Microsoft.Extensions.Configuration.Json": "3.1.2",
+          "MySql.Data.Entity": "6.10.9",
           "MySql.Data.EntityFrameworkCore": "8.0.19",
           "MySql.Data.EntityFrameworkCore.Design": "8.0.19"
         },
@@ -789,6 +790,14 @@
           "lib/netstandard2.1/Ubiety.Dns.Core.dll": {
             "assemblyVersion": "2.2.1.0",
             "fileVersion": "2.2.1.0"
+          }
+        }
+      },
+      "MySql.Data.Entity/6.10.9": {
+        "runtime": {
+          "lib/net452/MySql.Data.Entity.EF6.dll": {
+            "assemblyVersion": "6.10.9.0",
+            "fileVersion": "6.10.9.0"
           }
         }
       },
@@ -2186,6 +2195,13 @@
       "sha512": "sha512-zPFSg8rW3PcFIn27d0lEHQ/XWQhBzGIgKYQYFZN8aHLlpen5D6nz3/wb54V9ZRH3zkWlIWQ7FfxqbQdl3vizjQ==",
       "path": "mysql.data/8.0.19",
       "hashPath": "mysql.data.8.0.19.nupkg.sha512"
+    },
+    "MySql.Data.Entity/6.10.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-csewGW5NKXVHKdnzKXc9vB8pWQNyt9y9u9Qjk3NoIJNVPYK+DOGmaIgwQfkoOr0WWe536NZh+ZXLgw8XRv2eWw==",
+      "path": "mysql.data.entity/6.10.9",
+      "hashPath": "mysql.data.entity.6.10.9.nupkg.sha512"
     },
     "MySql.Data.EntityFrameworkCore/8.0.19": {
       "type": "package",

@@ -1,0 +1,1 @@
+2020-03-10 15:21:49.025 -03:00 [ERR] Main handled an exception: Failed to bind to address http://127.0.0.1:5000: address already in use.

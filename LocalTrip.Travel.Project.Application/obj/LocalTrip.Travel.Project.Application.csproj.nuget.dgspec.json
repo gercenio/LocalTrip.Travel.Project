@@ -175,6 +175,10 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
+            "MySql.Data.Entity": {
+              "target": "Package",
+              "version": "[6.10.9, )"
+            },
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.19, )"

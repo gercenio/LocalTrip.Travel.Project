@@ -103,3 +103,4 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/obj/Debug/netcoreapp3.1/LocalTrip.Core.Api.csproj.CopyComplete
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/obj/Debug/netcoreapp3.1/LocalTrip.Core.Api.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/obj/Debug/netcoreapp3.1/LocalTrip.Core.Api.pdb
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/MySql.Data.Entity.EF6.dll
