@@ -9,6 +9,7 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
 {
     public class MySqlContext : DbContext
     {
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var config = new ConfigurationBuilder()
@@ -16,7 +17,7 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            optionsBuilder.UseMySQL(config.GetSection("ConnectionStrings:Connection").Value);
+            optionsBuilder.UseMySql(config.GetSection("ConnectionStrings:Connection").Value);
         }
         
         public override int SaveChanges()

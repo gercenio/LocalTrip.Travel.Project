@@ -19,6 +19,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -127,6 +128,7 @@ namespace LocalTrip.Core.Api
             services.AddOptions();
             
             services.AddSingleton<IConfiguration>(Configuration);
+            //services.AddDbContext<MySqlContext>(o => o.UseMySQL(Configuration.GetSection("ConnectionStrings:Connection").Value));
             
             services.AddControllers();
         }
@@ -163,7 +165,9 @@ namespace LocalTrip.Core.Api
         {
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
             services.AddScoped<ITripRepository, TripRepository>();
-            services.AddScoped<MySqlContext>();
+            //services.AddScoped<MySqlContext>();
+            
+
             services.AddLogging();
             AddMediatr(services);
             

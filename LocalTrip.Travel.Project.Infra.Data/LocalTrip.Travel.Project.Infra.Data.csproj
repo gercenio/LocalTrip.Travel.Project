@@ -12,10 +12,8 @@
       <PackageReference Include="Microsoft.AspNetCore" Version="2.1.1" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
-      <PackageReference Include="MySql.Data" Version="8.0.19" />
-      <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.19" />
-      <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
-      <PackageReference Include="MySql.Web" Version="8.0.19" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
     </ItemGroup>
 
 </Project>
