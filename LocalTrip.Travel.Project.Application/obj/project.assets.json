@@ -881,15 +881,6 @@
           "lib/netstandard2.1/Ubiety.Dns.Core.dll": {}
         }
       },
-      "MySql.Data.Entity/6.10.9": {
-        "type": "package",
-        "compile": {
-          "lib/net452/MySql.Data.Entity.EF6.dll": {}
-        },
-        "runtime": {
-          "lib/net452/MySql.Data.Entity.EF6.dll": {}
-        }
-      },
       "MySql.Data.EntityFrameworkCore/8.0.19": {
         "type": "package",
         "dependencies": {
@@ -910,6 +901,15 @@
         },
         "runtime": {
           "lib/net452/MySql.Data.EntityFrameworkCore.Design.dll": {}
+        }
+      },
+      "MySql.Web/8.0.19": {
+        "type": "package",
+        "compile": {
+          "lib/net452/MySql.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Web.dll": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -2536,9 +2536,10 @@
           "Microsoft.AspNetCore": "2.1.1",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "Microsoft.Extensions.Configuration.Json": "3.1.2",
-          "MySql.Data.Entity": "6.10.9",
+          "MySql.Data": "8.0.19",
           "MySql.Data.EntityFrameworkCore": "8.0.19",
-          "MySql.Data.EntityFrameworkCore.Design": "8.0.19"
+          "MySql.Data.EntityFrameworkCore.Design": "8.0.19",
+          "MySql.Web": "8.0.19"
         },
         "compile": {
           "bin/placeholder/LocalTrip.Travel.Project.Infra.Data.dll": {}
@@ -3543,23 +3544,6 @@
         "mysql.data.nuspec"
       ]
     },
-    "MySql.Data.Entity/6.10.9": {
-      "sha512": "csewGW5NKXVHKdnzKXc9vB8pWQNyt9y9u9Qjk3NoIJNVPYK+DOGmaIgwQfkoOr0WWe536NZh+ZXLgw8XRv2eWw==",
-      "type": "package",
-      "path": "mysql.data.entity/6.10.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/app.config.transform",
-        "content/web.config.transform",
-        "contentFiles/any/net452/app.config.transform",
-        "contentFiles/any/net452/web.config.transform",
-        "lib/net452/MySql.Data.Entity.EF6.dll",
-        "lib/net452/MySql.Data.Entity.EF6.xml",
-        "mysql.data.entity.6.10.9.nupkg.sha512",
-        "mysql.data.entity.nuspec"
-      ]
-    },
     "MySql.Data.EntityFrameworkCore/8.0.19": {
       "sha512": "MQvizr38a0yUSuiUZvvS1FrGCA1PqunxDbJvs9fGQkBoLV2mua8m4EK4egMatHj7PRVPThsPmYKjEt/WPMU2Qg==",
       "type": "package",
@@ -3588,6 +3572,21 @@
         "lib/net452/MySql.Data.EntityFrameworkCore.Design.xml",
         "mysql.data.entityframeworkcore.design.8.0.19.nupkg.sha512",
         "mysql.data.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "MySql.Web/8.0.19": {
+      "sha512": "foETtySqIbZbGksN51Ol/8nMxoZc+4zYQx2WqXRfN9581yYnFhSoM8Ty6zLBKFFFiGtFuKt1pDMp8VmMaomwNg==",
+      "type": "package",
+      "path": "mysql.web/8.0.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/web.config.transform",
+        "contentFiles/any/net452/web.config.transform",
+        "lib/net452/MySql.Web.dll",
+        "lib/net452/MySql.Web.xml",
+        "mysql.web.8.0.19.nupkg.sha512",
+        "mysql.web.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -8036,8 +8035,8 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'MySql.Data.Entity 6.10.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "MySql.Data.Entity",
+      "message": "Package 'MySql.Data.EntityFrameworkCore.Design 8.0.19' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "MySql.Data.EntityFrameworkCore.Design",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -8046,8 +8045,8 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'MySql.Data.EntityFrameworkCore.Design 8.0.19' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "MySql.Data.EntityFrameworkCore.Design",
+      "message": "Package 'MySql.Web 8.0.19' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "MySql.Web",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

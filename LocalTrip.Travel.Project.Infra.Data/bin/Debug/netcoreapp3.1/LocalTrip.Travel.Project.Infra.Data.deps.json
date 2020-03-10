@@ -12,9 +12,10 @@
           "Microsoft.AspNetCore": "2.1.1",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "Microsoft.Extensions.Configuration.Json": "3.1.2",
-          "MySql.Data.Entity": "6.10.9",
+          "MySql.Data": "8.0.19",
           "MySql.Data.EntityFrameworkCore": "8.0.19",
-          "MySql.Data.EntityFrameworkCore.Design": "8.0.19"
+          "MySql.Data.EntityFrameworkCore.Design": "8.0.19",
+          "MySql.Web": "8.0.19"
         },
         "runtime": {
           "LocalTrip.Travel.Project.Infra.Data.dll": {}
@@ -793,14 +794,6 @@
           }
         }
       },
-      "MySql.Data.Entity/6.10.9": {
-        "runtime": {
-          "lib/net452/MySql.Data.Entity.EF6.dll": {
-            "assemblyVersion": "6.10.9.0",
-            "fileVersion": "6.10.9.0"
-          }
-        }
-      },
       "MySql.Data.EntityFrameworkCore/8.0.19": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "2.1.2",
@@ -816,6 +809,14 @@
       "MySql.Data.EntityFrameworkCore.Design/8.0.19": {
         "runtime": {
           "lib/net452/MySql.Data.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "8.0.19.0",
+            "fileVersion": "8.0.19.0"
+          }
+        }
+      },
+      "MySql.Web/8.0.19": {
+        "runtime": {
+          "lib/net452/MySql.Web.dll": {
             "assemblyVersion": "8.0.19.0",
             "fileVersion": "8.0.19.0"
           }
@@ -2196,13 +2197,6 @@
       "path": "mysql.data/8.0.19",
       "hashPath": "mysql.data.8.0.19.nupkg.sha512"
     },
-    "MySql.Data.Entity/6.10.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-csewGW5NKXVHKdnzKXc9vB8pWQNyt9y9u9Qjk3NoIJNVPYK+DOGmaIgwQfkoOr0WWe536NZh+ZXLgw8XRv2eWw==",
-      "path": "mysql.data.entity/6.10.9",
-      "hashPath": "mysql.data.entity.6.10.9.nupkg.sha512"
-    },
     "MySql.Data.EntityFrameworkCore/8.0.19": {
       "type": "package",
       "serviceable": true,
@@ -2216,6 +2210,13 @@
       "sha512": "sha512-5SeMtEaPN6giRCP0HSYj3u51rWGlHL15ECax6TTG/xID2Ag4oDpxZGuQuk2zd4BFQCj7oNYeIgEHfQVFVDF4vw==",
       "path": "mysql.data.entityframeworkcore.design/8.0.19",
       "hashPath": "mysql.data.entityframeworkcore.design.8.0.19.nupkg.sha512"
+    },
+    "MySql.Web/8.0.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-foETtySqIbZbGksN51Ol/8nMxoZc+4zYQx2WqXRfN9581yYnFhSoM8Ty6zLBKFFFiGtFuKt1pDMp8VmMaomwNg==",
+      "path": "mysql.web/8.0.19",
+      "hashPath": "mysql.web.8.0.19.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",
