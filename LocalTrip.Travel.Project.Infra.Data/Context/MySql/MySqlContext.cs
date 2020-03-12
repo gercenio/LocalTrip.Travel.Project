@@ -48,13 +48,15 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
             modelBuilder.Entity<ApiAccountDto>().ToTable("apiaccount", "TripDb");
             modelBuilder.Entity<TripDto>().ToTable("trip", "TripDb");
             modelBuilder.Entity<ProviderDto>().ToTable("provider", "TripDb");
-
+            modelBuilder.Entity<GiftCardDto>().ToTable("giftcard", "TripDb");
+            
             base.OnModelCreating(modelBuilder);
         }
         
         public DbSet<ApiAccountDto> ApiAccount { get; set; }
         public DbSet<TripDto> Trip { get; set; }
         public DbSet<ProviderDto> Provider { get; set; }
+        public DbSet<GiftCardDto> GiftCard { get; set; }
 
     }
 }

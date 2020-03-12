@@ -14,5 +14,7 @@ namespace LocalTrip.Travel.Project.Infra.Data.Mappers
                 
             };
         }
+
+        
     }
 }

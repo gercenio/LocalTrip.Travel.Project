@@ -17,6 +17,8 @@ namespace LocalTrip.Travel.Project.Infra.Data.Dtos
         public string CountryDestination { get; set; }
         public string CityOrigem { get; set; }
         public string CityDestination { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
         public DateTime InsertAt { get; set; }
         public DateTime? UpdateAt { get; set; }
     }

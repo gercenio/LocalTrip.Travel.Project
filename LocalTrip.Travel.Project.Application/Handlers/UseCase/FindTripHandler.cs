@@ -1,7 +1,10 @@
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using LocalTrip.Travel.Project.Application.Commands.Request;
 using LocalTrip.Travel.Project.Application.Commands.Response;
+using LocalTrip.Travel.Project.Domain.Entities;
 using LocalTrip.Travel.Project.Infra.Data.Interfaces;
 using MediatR;
 
@@ -19,5 +22,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
         {
             throw new System.NotImplementedException();
         }
+
+        
     }
 }

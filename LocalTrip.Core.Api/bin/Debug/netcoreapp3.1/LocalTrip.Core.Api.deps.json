@@ -2243,7 +2243,8 @@
           "Microsoft.AspNetCore": "2.1.1",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "Microsoft.Extensions.Configuration.Json": "3.1.2",
-          "Pomelo.EntityFrameworkCore.MySql": "3.1.1"
+          "Pomelo.EntityFrameworkCore.MySql": "3.1.1",
+          "Pomelo.EntityFrameworkCore.MySql.Design": "1.1.2"
         },
         "runtime": {
           "LocalTrip.Travel.Project.Infra.Data.dll": {}
