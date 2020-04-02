@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using LocalTrip.Travel.Project.Domain.Entities;
 using LocalTrip.Travel.Project.Infra.Data.Dtos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -46,17 +47,22 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ApiAccountDto>().ToTable("apiaccount", "TripDb");
-            modelBuilder.Entity<TripDto>().ToTable("trip", "TripDb");
-            modelBuilder.Entity<ProviderDto>().ToTable("provider", "TripDb");
-            modelBuilder.Entity<GiftCardDto>().ToTable("giftcard", "TripDb");
+            //modelBuilder.Entity<TripDto>().ToTable("trip", "TripDb");
+            //modelBuilder.Entity<ProviderDto>().ToTable("provider", "TripDb");
+            //modelBuilder.Entity<GiftCardDto>().ToTable("giftcard", "TripDb");
+            modelBuilder.Entity<DestinationDto>().ToTable("Destination", "TripDb");
+            modelBuilder.Entity<DestinationActivitiesDto>().ToTable("destinationactivities", "TripDb");
+
             
             base.OnModelCreating(modelBuilder);
         }
         
         public DbSet<ApiAccountDto> ApiAccount { get; set; }
-        public DbSet<TripDto> Trip { get; set; }
-        public DbSet<ProviderDto> Provider { get; set; }
-        public DbSet<GiftCardDto> GiftCard { get; set; }
+        //public DbSet<TripDto> Trip { get; set; }
+        //public DbSet<ProviderDto> Provider { get; set; }
+        //public DbSet<GiftCardDto> GiftCard { get; set; }
+        public DbSet<DestinationDto> Destination { get; set; }
+        public DbSet<DestinationActivitiesDto> DestinationActivities { get; set; }
 
     }
 }

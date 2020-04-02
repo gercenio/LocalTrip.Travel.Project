@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LocalTrip.Travel.Project.Infra.Data.Interfaces
 {
@@ -9,7 +10,7 @@ namespace LocalTrip.Travel.Project.Infra.Data.Interfaces
         void Update(TEntity _obj);
         void Remove(TEntity _obj);
         void Dispose();
-        IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
         TEntity GetById(int id);
         void Detach(TEntity _obj);
         void Attach(TEntity _obj);

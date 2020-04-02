@@ -25,7 +25,8 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="AutheticationController.cs" t="Include" />
-          <e p="TripController.cs" t="Include" />
+          <e p="DestinationController.cs" t="Include" />
+          <e p="ImagensController.cs" t="Include" />
         </e>
         <e p="LocalTrip.Core.Api.csproj" t="IncludeRecursive" />
         <e p="Logs" t="Include">
@@ -97,6 +98,9 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Entities" t="Include">
           <e p="ApiAccount.cs" t="Include" />
+          <e p="Destination.cs" t="Include" />
+          <e p="DestinationActivities.cs" t="Include" />
+          <e p="DestinationImage.cs" t="Include" />
           <e p="DestinationTrip.cs" t="Include" />
           <e p="ExcludeItensOnTrip.cs" t="Include" />
           <e p="Giftcard.cs" t="Include" />
@@ -127,12 +131,15 @@
         </e>
         <e p="Dtos" t="Include">
           <e p="ApiAccountDto.cs" t="Include" />
+          <e p="DestinationActivitiesDto.cs" t="Include" />
+          <e p="DestinationDto.cs" t="Include" />
           <e p="GiftCardDto.cs" t="Include" />
           <e p="ProviderDto.cs" t="Include" />
           <e p="TripDto.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
           <e p="IApiAccountRepository.cs" t="Include" />
+          <e p="IDestinationRepository.cs" t="Include" />
           <e p="IGiftCardRepository.cs" t="Include" />
           <e p="IProviderRepository.cs" t="Include" />
           <e p="IRepository.cs" t="Include" />
@@ -141,6 +148,7 @@
         <e p="LocalTrip.Travel.Project.Infra.Data.csproj" t="IncludeRecursive" />
         <e p="Mappers" t="Include">
           <e p="ApiAccountDtoMapper.cs" t="Include" />
+          <e p="DestinationDtoMapper.cs" t="Include" />
           <e p="GiftCardDtoMapper.cs" t="Include" />
           <e p="TripDtoMapper.cs" t="Include" />
         </e>
@@ -153,10 +161,40 @@
         </e>
         <e p="Repository" t="Include">
           <e p="ApiAccountRepository.cs" t="Include" />
+          <e p="DestinationRepository.cs" t="Include" />
           <e p="GiftCardRepository.cs" t="Include" />
           <e p="ProviderRepository.cs" t="Include" />
           <e p="Repository.cs" t="Include" />
           <e p="TripRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="LocalTrip.Travel.Project.Infra.Service" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configurations" t="Include">
+          <e p="ImageServiceSettings.cs" t="Include" />
+        </e>
+        <e p="Dtos" t="Include">
+          <e p="ServiceImage" t="Include">
+            <e p="BaseImageResponseDto.cs" t="Include" />
+            <e p="ImageDto.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Extensions" t="Include">
+          <e p="HttpClientExtensions.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IServiceImage.cs" t="Include" />
+        </e>
+        <e p="LocalTrip.Travel.Project.Infra.Service.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LocalTrip.Travel.Project.Infra.Service.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Service" t="Include">
+          <e p="ServiceImage.cs" t="Include" />
         </e>
       </e>
       <e p="LocalTrip.Travel.Project.sln" t="IncludeFlat" />

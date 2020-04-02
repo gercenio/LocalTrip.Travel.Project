@@ -4,10 +4,8 @@ namespace LocalTrip.Core.Api.ViewModels
 {
     public class GetTripViewModel
     {
-        public string CityOrigem { get; set; }
-        public string CountryOrigem { get; set; }
-        public DateTime DateTrip { get; set; }
-        public string CityDestination { get; set; }
-        public string CountryDestination { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public decimal Price { get; set; }
     }
 }

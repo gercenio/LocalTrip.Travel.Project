@@ -1,7 +1,6 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
-/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/LocalTrip.Core.Api
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/LocalTrip.Core.Api.deps.json
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/LocalTrip.Core.Api.runtimeconfig.json
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/LocalTrip.Core.Api.runtimeconfig.dev.json

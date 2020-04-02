@@ -59,7 +59,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
         {
             var result = new ApiAccount(null,null);
             var _result = _apiAccountRepository
-                .GetAll().Where(m => m.UserCode == userCode).Single();
+                .GetAllAsync().Result.Where(m => m.UserCode == userCode).Single();
             if (_result != null)
             {
                 return _result.MapToDomain();

@@ -17,13 +17,22 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
         {
             _giftCardRepository = giftCardRepository;
         }
-
-        public Task<GiftCardByDayCommandResponse> Handle(GiftCardByDayCommandRequest request, CancellationToken cancellationToken)
+        
+        public async Task<GiftCardByDayCommandResponse> Handle(GiftCardByDayCommandRequest request, CancellationToken cancellationToken)
         {
-            throw new System.NotImplementedException();
-            var ResultResponse = _giftCardRepository.GetAll()
-                .Where(m => m.ValidDate == DateTime.Now).ToList();
             
+            var ResultResponse = _giftCardRepository.GetAllAsync().Result
+                .Where(m => m.ValidDate == DateTime.Now).ToList();
+            if (ResultResponse == null)
+            {
+                var _resultOne = new GiftCardByDayCommandResponse();
+                _resultOne.AddError("Dados não encontrado, por favor verifique !!!");
+                return _resultOne;
+            }
+            var _result = new GiftCardByDayCommandResponse();
+            _result.Result = ResultResponse;
+            return _result;
+
         }
     }
 }

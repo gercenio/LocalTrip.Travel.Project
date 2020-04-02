@@ -8,7 +8,7 @@ namespace LocalTrip.Travel.Project.Application.Core
         private readonly IList<string> _messages = new List<string>();
 
         public IEnumerable<string> Errors { get; }
-        public object Result { get; }
+        public object Result { get; set; }
 
         public Response() => Errors = new ReadOnlyCollection<string>(_messages);
 

@@ -1,35 +1,30 @@
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Web.Http;
 using LocalTrip.Core.Api.Mappers;
 using LocalTrip.Core.Api.ViewModels;
 using LocalTrip.Travel.Project.Application.Core;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace LocalTrip.Core.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
-    [Authorize("Bearer")]
-    public class TripController : ControllerBase
+    [Authorize]
+    public class DestinationController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger<TripController> _logger;
-        
-        public TripController(ILogger<TripController> logger,
-            IMediator mediator)
+        private readonly ILogger<DestinationController> _logger;
+
+        public DestinationController(ILogger<DestinationController> logger,IMediator mediator)
         {
             _mediator = mediator;
-           _logger = logger;
+            _logger = logger;
         }
-
         
-        [HttpPost]
-        [Route("GetTrips")]
-        public async Task<IActionResult> GetTrips([FromBody]GetTripViewModel model)
+        [Microsoft.AspNetCore.Mvc.HttpGet]
+        public async Task<IActionResult> Get([FromQuery]GetTripViewModel model)
         {
             _logger.LogInformation("GET / TRIPS"+System.Text.Json.JsonSerializer.Serialize(model));
             var response = await _mediator.Send(model.MapToCommand());

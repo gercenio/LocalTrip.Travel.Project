@@ -6,10 +6,19 @@ namespace LocalTrip.Travel.Project.Application.Commands.Request
 {
     public class FindTripCommandRequest :IRequest<FindTripCommandResponse>
     {
-        public string CityOrigem { get; set; }
-        public string CountryOrigem { get; set; }
-        public DateTime DateTrip { get; set; }
-        public string CityDestination { get; set; }
-        public string CountryDestination { get; set; }
+        public decimal Price { get; }
+
+        public string City { get; }
+
+        public string Country { get; }
+
+        public FindTripCommandRequest(decimal price, string city, string country)
+        {
+            Price = price;
+            City = city;
+            Country = country;
+        }
+
+        
     }
 }

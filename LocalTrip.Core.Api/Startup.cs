@@ -165,9 +165,8 @@ namespace LocalTrip.Core.Api
         {
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
             services.AddScoped<ITripRepository, TripRepository>();
-            //services.AddScoped<MySqlContext>();
+            services.AddScoped<IDestinationRepository, DestinationRepository>();
             
-
             services.AddLogging();
             AddMediatr(services);
             

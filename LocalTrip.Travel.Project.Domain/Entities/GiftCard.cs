@@ -5,7 +5,7 @@ namespace LocalTrip.Travel.Project.Domain.Entities
 {
     public class GiftCard
     {
-
+        
         public string Name { get; private set; }
         public string Description { get; private set; }
         public string ImageValue { get; private set; }

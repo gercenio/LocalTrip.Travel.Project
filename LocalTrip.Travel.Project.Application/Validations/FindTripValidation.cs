@@ -7,7 +7,7 @@ namespace LocalTrip.Travel.Project.Application.Validations
     {
         public FindTripValidation()
         {
-            RuleFor(a => a.CityDestination)
+            RuleFor(a => a.City)
                 .NotEmpty()
                 .WithMessage("A cidade destino é obrigatório");
         }

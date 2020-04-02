@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Linq;
+using System.Threading.Tasks;
 using LocalTrip.Travel.Project.Infra.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -27,9 +28,9 @@ namespace LocalTrip.Travel.Project.Infra.Data.Repository
             Db.SaveChanges();
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return Db.Set<TEntity>().AsNoTracking().ToList();
+            return await Db.Set<TEntity>().AsNoTracking().ToListAsync();
         }
 
         public TEntity GetById(int id)
