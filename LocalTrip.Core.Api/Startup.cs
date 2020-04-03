@@ -167,7 +167,6 @@ namespace LocalTrip.Core.Api
         private static void AddApplicationServices(IServiceCollection services)
         {
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
-            //services.AddScoped<ITripRepository, TripRepository>();
             services.AddScoped<IDestinationRepository, DestinationRepository>();
             services.AddHttpClient<IServiceImage, ServiceImage>();
             
