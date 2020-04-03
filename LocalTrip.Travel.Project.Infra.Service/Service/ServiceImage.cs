@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
@@ -20,18 +21,17 @@ namespace LocalTrip.Travel.Project.Infra.Service.Service
         {
             _settings = options.Value;
             _httpClient = httpClient;
+            _httpClient.BaseAddress = new Uri(_settings.Url);
         }
-
-        public async Task<BaseImageResponseDto> GetAll(string imagemtoken)
+        public async Task<BaseImageResponseDto> GetAllAsync(string imagemtoken)
         {
             var (httpResponse, content) = await _httpClient.SendRequestAsync<string,BaseImageResponseDto>(
-                    $"{_settings.GetAllByToken}",HttpMethod.Get, "");
+                    $"{_settings.GetAllByToken}/?userToken={imagemtoken}",HttpMethod.Get, "");
             
             if (httpResponse.StatusCode == HttpStatusCode.NotFound)
             {
                 return null;
             }
-
             return content;
             
         }

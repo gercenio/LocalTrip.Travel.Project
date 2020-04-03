@@ -11,6 +11,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\LocalTrip.Travel.Project.Infra.Data\LocalTrip.Travel.Project.Infra.Data.csproj" />
+      <ProjectReference Include="..\LocalTrip.Travel.Project.Infra.Service\LocalTrip.Travel.Project.Infra.Service.csproj" />
     </ItemGroup>
 
 </Project>

@@ -7,6 +7,6 @@ namespace LocalTrip.Travel.Project.Infra.Service.Interfaces
 {
     public interface IServiceImage
     {
-        Task<BaseImageResponseDto> GetAll(string imagetoken);
+        Task<BaseImageResponseDto> GetAllAsync(string imagetoken);
     }
 }

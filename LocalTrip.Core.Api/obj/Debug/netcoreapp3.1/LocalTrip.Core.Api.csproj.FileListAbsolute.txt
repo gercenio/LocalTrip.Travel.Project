@@ -90,3 +90,5 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.Design.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Core.Api/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.pdb

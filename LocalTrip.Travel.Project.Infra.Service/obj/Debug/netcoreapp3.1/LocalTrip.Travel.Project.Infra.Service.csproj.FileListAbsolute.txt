@@ -6,3 +6,6 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.AssemblyInfo.cs
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.pdb
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.pdb
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.csproj.CopyComplete

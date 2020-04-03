@@ -10,6 +10,9 @@ using LocalTrip.Travel.Project.Application.Behaviors;
 using LocalTrip.Travel.Project.Infra.Data.Context.MySql;
 using LocalTrip.Travel.Project.Infra.Data.Interfaces;
 using LocalTrip.Travel.Project.Infra.Data.Repository;
+using LocalTrip.Travel.Project.Infra.Service.Configurations;
+using LocalTrip.Travel.Project.Infra.Service.Interfaces;
+using LocalTrip.Travel.Project.Infra.Service.Service;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -128,8 +131,8 @@ namespace LocalTrip.Core.Api
             services.AddOptions();
             
             services.AddSingleton<IConfiguration>(Configuration);
-            //services.AddDbContext<MySqlContext>(o => o.UseMySQL(Configuration.GetSection("ConnectionStrings:Connection").Value));
-            
+            services.Configure<ImageServiceSettings>(Configuration.GetSection(nameof(ImageServiceSettings)));
+
             services.AddControllers();
         }
 
@@ -166,6 +169,7 @@ namespace LocalTrip.Core.Api
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
             services.AddScoped<ITripRepository, TripRepository>();
             services.AddScoped<IDestinationRepository, DestinationRepository>();
+            services.AddHttpClient<IServiceImage, ServiceImage>();
             
             services.AddLogging();
             AddMediatr(services);

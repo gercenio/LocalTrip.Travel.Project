@@ -31,6 +31,9 @@
             "projectReferences": {
               "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Data/LocalTrip.Travel.Project.Infra.Data.csproj": {
                 "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Data/LocalTrip.Travel.Project.Infra.Data.csproj"
+              },
+              "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/LocalTrip.Travel.Project.Infra.Service.csproj": {
+                "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/LocalTrip.Travel.Project.Infra.Service.csproj"
               }
             }
           }
@@ -185,6 +188,74 @@
             "Pomelo.EntityFrameworkCore.MySql.Design": {
               "target": "Package",
               "version": "[1.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/LocalTrip.Travel.Project.Infra.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/LocalTrip.Travel.Project.Infra.Service.csproj",
+        "projectName": "LocalTrip.Travel.Project.Infra.Service",
+        "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/LocalTrip.Travel.Project.Infra.Service.csproj",
+        "packagesPath": "/Users/gercenioxavier/.nuget/packages/",
+        "outputPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Infra.Service/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/gercenioxavier/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://10.33.1.34:8081/repository/nuget-group/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/LocalTrip.Travel.Project.Domain.csproj": {
+                "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/LocalTrip.Travel.Project.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

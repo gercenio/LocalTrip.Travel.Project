@@ -50,7 +50,7 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
             //modelBuilder.Entity<TripDto>().ToTable("trip", "TripDb");
             //modelBuilder.Entity<ProviderDto>().ToTable("provider", "TripDb");
             //modelBuilder.Entity<GiftCardDto>().ToTable("giftcard", "TripDb");
-            modelBuilder.Entity<DestinationDto>().ToTable("Destination", "TripDb");
+            modelBuilder.Entity<DestinationDto>().ToTable("destination", "TripDb");
             modelBuilder.Entity<DestinationActivitiesDto>().ToTable("destinationactivities", "TripDb");
 
             

@@ -18,7 +18,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/LocalTrip.Travel.Project.Domain.csproj": {
+            "projectPath": "/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Domain/LocalTrip.Travel.Project.Domain.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

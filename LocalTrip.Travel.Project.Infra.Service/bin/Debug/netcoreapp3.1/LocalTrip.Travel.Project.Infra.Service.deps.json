@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "LocalTrip.Travel.Project.Infra.Service/1.0.0": {
         "dependencies": {
+          "LocalTrip.Travel.Project.Domain": "1.0.0",
           "Microsoft.Extensions.Options": "3.1.3",
           "Newtonsoft.Json": "12.0.3"
         },
@@ -50,6 +51,11 @@
             "fileVersion": "12.0.3.23909"
           }
         }
+      },
+      "LocalTrip.Travel.Project.Domain/1.0.0": {
+        "runtime": {
+          "LocalTrip.Travel.Project.Domain.dll": {}
+        }
       }
     }
   },
@@ -86,6 +92,11 @@
       "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "LocalTrip.Travel.Project.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

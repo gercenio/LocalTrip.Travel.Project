@@ -26,7 +26,6 @@
           <e p="AccountController.cs" t="Include" />
           <e p="AutheticationController.cs" t="Include" />
           <e p="DestinationController.cs" t="Include" />
-          <e p="ImagensController.cs" t="Include" />
         </e>
         <e p="LocalTrip.Core.Api.csproj" t="IncludeRecursive" />
         <e p="Logs" t="Include">
@@ -186,6 +185,10 @@
           <e p="IServiceImage.cs" t="Include" />
         </e>
         <e p="LocalTrip.Travel.Project.Infra.Service.csproj" t="IncludeRecursive" />
+        <e p="Mappers" t="Include">
+          <e p="BaseImageResponseDtoMapper.cs" t="Include" />
+          <e p="ImageDtoMapper.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
