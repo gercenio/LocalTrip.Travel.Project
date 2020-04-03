@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using System.Web.Http;
 using LocalTrip.Core.Api.Mappers;
 using LocalTrip.Core.Api.ViewModels;
 using LocalTrip.Travel.Project.Application.Core;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -11,7 +11,7 @@ namespace LocalTrip.Core.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    [Authorize]
+    [System.Web.Http.Authorize]
     public class DestinationController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -24,6 +24,7 @@ namespace LocalTrip.Core.Api.Controllers
         }
         
         [Microsoft.AspNetCore.Mvc.HttpGet]
+        [Authorize("Bearer")]
         public async Task<IActionResult> Get([FromQuery]GetTripViewModel model)
         {
             _logger.LogInformation("GET / TRIPS"+System.Text.Json.JsonSerializer.Serialize(model));
