@@ -167,7 +167,7 @@ namespace LocalTrip.Core.Api
         private static void AddApplicationServices(IServiceCollection services)
         {
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
-            services.AddScoped<ITripRepository, TripRepository>();
+            //services.AddScoped<ITripRepository, TripRepository>();
             services.AddScoped<IDestinationRepository, DestinationRepository>();
             services.AddHttpClient<IServiceImage, ServiceImage>();
             
@@ -189,7 +189,6 @@ namespace LocalTrip.Core.Api
                 .ForEach(result => services.AddScoped(result.InterfaceType, result.ValidatorType));
 
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(FailFastRequestBehavior<,>));
-
             services.AddMediatR(assembly);
         }
     }
