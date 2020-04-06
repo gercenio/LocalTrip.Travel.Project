@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
+using System.Web.Http;
 using LocalTrip.Core.Api.Mappers;
 using LocalTrip.Core.Api.ViewModels;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -24,21 +24,30 @@ namespace LocalTrip.Core.Api.Controllers
             _logger = logger;
         }
 
-        [HttpPost("Register")]
-        [Authorize("Bearer")]
-        public async Task<IActionResult> Register([FromBody]AccountRegisterViewModel model)
+        [Microsoft.AspNetCore.Mvc.HttpPost("Register")]
+        [Microsoft.AspNetCore.Authorization.Authorize("Bearer")]
+        public async Task<IActionResult> Register([Microsoft.AspNetCore.Mvc.FromBody]AccountRegisterViewModel model)
         {
             var response = _mediator.Send(model.MapToCommand());
             return Ok(response);
         }
         
-        [HttpGet("Detail")]
-        [Authorize("Bearer")]
+        [Microsoft.AspNetCore.Mvc.HttpGet("Detail")]
+        [Microsoft.AspNetCore.Authorization.Authorize("Bearer")]
         public async Task<IActionResult> Detail([FromQuery]AccountDetailViewModel model)
         {
             var response = _mediator.Send(model.MapToCommand());
             return Ok(response);
         }
-        
+
+        [Microsoft.AspNetCore.Mvc.HttpPut("{document}")]
+        //[Microsoft.AspNetCore.Authorization.Authorize("Bearer")]
+        public async Task<IActionResult> Update(string document
+            ,[Microsoft.AspNetCore.Mvc.FromBody]AccountUpdateViewModel model)
+        {
+            var response = _mediator.Send(model.MapToCommand(document));
+            return Ok(response);
+        }
+
     }
 }
