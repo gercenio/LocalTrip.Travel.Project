@@ -23,7 +23,7 @@
           <e p="TokenConfigurations.cs" t="Include" />
         </e>
         <e p="Controllers" t="Include">
-          <e p="AutheticationController.cs" t="Include" />
+          <e p="AuthenticationController.cs" t="Include" />
           <e p="DestinationController.cs" t="Include" />
           <e p="UserAccountController.cs" t="Include" />
         </e>

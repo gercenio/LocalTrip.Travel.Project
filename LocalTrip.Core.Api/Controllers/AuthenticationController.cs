@@ -17,12 +17,12 @@ namespace LocalTrip.Core.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AutheticationController : ControllerBase
+    public class AuthenticationController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger<AutheticationController> _logger;
+        private readonly ILogger<AuthenticationController> _logger;
 
-        public AutheticationController(ILogger<AutheticationController> logger,IMediator mediator)
+        public AuthenticationController(ILogger<AuthenticationController> logger,IMediator mediator)
         {
             _mediator = mediator;
             _logger = logger;
