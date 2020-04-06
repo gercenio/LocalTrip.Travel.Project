@@ -168,8 +168,12 @@ namespace LocalTrip.Core.Api
         {
             services.AddScoped<IApiAccountRepository, ApiAccountRepository>();
             services.AddScoped<IDestinationRepository, DestinationRepository>();
+            services.AddScoped<IPeopleRepository, PeopleRepository>();
+            services.AddScoped<IPeopleContactRepository, PeopleContactRepository>();
+            services.AddScoped<IPeopleAccountRepository, PeopleAccountRepository>();
+            // HTTP
             services.AddHttpClient<IServiceImage, ServiceImage>();
-            
+
             services.AddLogging();
             AddMediatr(services);
             

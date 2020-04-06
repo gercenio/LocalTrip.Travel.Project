@@ -4,16 +4,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LocalTrip.Travel.Project.Infra.Data.Dtos
 {
-    [Table("giftcard")]
-    public class GiftCardDto
+    public class PeopleContactDto
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string ImageValue { get; set; }
-        public DateTime ValidDate { get; set; }
+        public int Id { get; set; }
+        public int ContactType { get; set; }
+        public string Value { get; set; }
+        
+        [ForeignKey("People")]
+        public int PeopleId { get; set; }
+        public PeopleDto People { get; set; }
+        
         public DateTime InsertAt { get; set; }
         public DateTime? UpdateAt { get; set; }
     }

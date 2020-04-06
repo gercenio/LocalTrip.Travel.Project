@@ -3,7 +3,7 @@ using LocalTrip.Travel.Project.Infra.Data.Interfaces;
 
 namespace LocalTrip.Travel.Project.Infra.Data.Repository
 {
-    public class GiftCardRepository : Repository<GiftCardDto> , IGiftCardRepository
+    public class PeopleContactRepository : Repository<PeopleContactDto> , IPeopleContactRepository
     {
         
     }

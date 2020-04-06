@@ -1,9 +1,7 @@
 namespace LocalTrip.Travel.Project.Domain.Enuns
 {
-    public enum TypeGiftCard
+    public enum AccountType
     {
-        P,
-        D,
-        R
+        Customer
     }
 }

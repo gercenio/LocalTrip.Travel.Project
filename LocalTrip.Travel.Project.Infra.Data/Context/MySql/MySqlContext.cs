@@ -48,6 +48,9 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
         {
             modelBuilder.Entity<ApiAccountDto>().ToTable("apiaccount", "TripDb");
             modelBuilder.Entity<DestinationDto>().ToTable("destination", "TripDb");
+            modelBuilder.Entity<PeopleDto>().ToTable("people", "TripDb");
+            modelBuilder.Entity<PeopleAccountDto>().ToTable("peopleaccount", "TripDb");
+            modelBuilder.Entity<PeopleContactDto>().ToTable("peoplecontact", "TripDb");
             modelBuilder.Entity<DestinationActivitiesDto>().ToTable("destinationactivities", "TripDb");
             
             base.OnModelCreating(modelBuilder);
@@ -55,6 +58,9 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
         
         public DbSet<ApiAccountDto> ApiAccount { get; set; }
         public DbSet<DestinationDto> Destination { get; set; }
+        public DbSet<PeopleDto> People { get; set; }
+        public DbSet<PeopleContactDto> PeopleContact { get; set; }
+        public DbSet<PeopleAccountDto> PeopleAccount { get; set; }
         public DbSet<DestinationActivitiesDto> DestinationActivities { get; set; }
 
     }
