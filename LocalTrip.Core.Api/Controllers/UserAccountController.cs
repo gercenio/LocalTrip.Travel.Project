@@ -25,6 +25,7 @@ namespace LocalTrip.Core.Api.Controllers
         }
 
         [HttpPost("Register")]
+        [Authorize("Bearer")]
         public async Task<IActionResult> Register([FromBody]AccountRegisterViewModel model)
         {
             var response = _mediator.Send(model.MapToCommand());
@@ -32,6 +33,7 @@ namespace LocalTrip.Core.Api.Controllers
         }
         
         [HttpGet("Detail")]
+        [Authorize("Bearer")]
         public async Task<IActionResult> Detail([FromQuery]AccountDetailViewModel model)
         {
             var response = _mediator.Send(model.MapToCommand());
