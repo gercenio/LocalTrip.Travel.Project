@@ -41,7 +41,7 @@ namespace LocalTrip.Core.Api.Controllers
         }
 
         [Microsoft.AspNetCore.Mvc.HttpPut("{document}")]
-        //[Microsoft.AspNetCore.Authorization.Authorize("Bearer")]
+        [Microsoft.AspNetCore.Authorization.Authorize("Bearer")]
         public async Task<IActionResult> Update(string document
             ,[Microsoft.AspNetCore.Mvc.FromBody]AccountUpdateViewModel model)
         {
@@ -49,5 +49,12 @@ namespace LocalTrip.Core.Api.Controllers
             return Ok(response);
         }
 
+        [Microsoft.AspNetCore.Mvc.HttpPost("Login")]
+        [Microsoft.AspNetCore.Authorization.Authorize("Bearer")]
+        public async Task<IActionResult> Login([Microsoft.AspNetCore.Mvc.FromBody]AccountLoginViewModel model)
+        {
+            var response = _mediator.Send(model.MapToCommand());
+            return Ok(response);
+        }
     }
 }

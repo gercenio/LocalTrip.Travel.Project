@@ -26,7 +26,6 @@
           <e p="AuthenticationController.cs" t="Include" />
           <e p="DestinationController.cs" t="Include" />
           <e p="UserAccountController.cs" t="Include" />
-          <e p="UserLoginController.cs" t="Include" />
         </e>
         <e p="Enuns" t="Include">
           <e p="PeopleType.cs" t="Include" />
@@ -38,6 +37,7 @@
         <e p="Mappers" t="Include">
           <e p="AccountApiViewModelMapper.cs" t="Include" />
           <e p="AccountDetailViewModelMapper.cs" t="Include" />
+          <e p="AccountLoginViewModelMapper.cs" t="Include" />
           <e p="AccountRegisterViewModelMapper.cs" t="Include" />
           <e p="AccountUpdateViewModelMapper.cs" t="Include" />
           <e p="GetTripViewModelMapper.cs" t="Include" />
@@ -57,6 +57,7 @@
         <e p="ViewModels" t="Include">
           <e p="AccountApiViewModel.cs" t="Include" />
           <e p="AccountDetailViewModel.cs" t="Include" />
+          <e p="AccountLoginViewModel.cs" t="Include" />
           <e p="AccountRegisterViewModel.cs" t="Include" />
           <e p="AccountUpdateViewModel.cs" t="Include" />
           <e p="GetTripViewModel.cs" t="Include" />
@@ -71,6 +72,7 @@
         <e p="Commands" t="Include">
           <e p="Request" t="Include">
             <e p="AccountDetailCommandRequest.cs" t="Include" />
+            <e p="AccountLoginCommandRequest.cs" t="Include" />
             <e p="AccountRegisterCommandRequest.cs" t="Include" />
             <e p="AccountUpdateCommandRequest.cs" t="Include" />
             <e p="AuthenticationCommandRequest.cs" t="Include" />
@@ -78,6 +80,7 @@
           </e>
           <e p="Response" t="Include">
             <e p="AccountDetailCommandResponse.cs" t="Include" />
+            <e p="AccountLoginCommandResponse.cs" t="Include" />
             <e p="AccountRegisterCommandResponse.cs" t="Include" />
             <e p="AccountUpdateCommandResponse.cs" t="Include" />
             <e p="AuthenticationCommandResponse.cs" t="Include" />
@@ -90,6 +93,7 @@
         <e p="Handlers" t="Include">
           <e p="UseCase" t="Include">
             <e p="AccountDetailHandler.cs" t="Include" />
+            <e p="AccountLoginHandler.cs" t="Include" />
             <e p="AccountRegisterHandler.cs" t="Include" />
             <e p="AccountUpdateHandler.cs" t="Include" />
             <e p="AuthenticationHandler.cs" t="Include" />
