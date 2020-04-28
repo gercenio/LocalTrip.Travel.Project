@@ -50,6 +50,8 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
             modelBuilder.Entity<DestinationDto>().ToTable("destination", "TripDb");
             modelBuilder.Entity<PeopleDto>().ToTable("people", "TripDb");
             modelBuilder.Entity<PeopleAccountDto>().ToTable("peopleaccount", "TripDb");
+            modelBuilder.Entity<CartDto>().ToTable("cart", "TripDb");
+            modelBuilder.Entity<CartItemDto>().ToTable("cartitem", "TripDb");
             modelBuilder.Entity<PeopleContactDto>().ToTable("peoplecontact", "TripDb");
             modelBuilder.Entity<DestinationActivitiesDto>().ToTable("destinationactivities", "TripDb");
             
@@ -60,6 +62,8 @@ namespace LocalTrip.Travel.Project.Infra.Data.Context.MySql
         public DbSet<DestinationDto> Destination { get; set; }
         public DbSet<PeopleDto> People { get; set; }
         public DbSet<PeopleContactDto> PeopleContact { get; set; }
+        public DbSet<CartDto> Cart { get; set; }
+        public DbSet<CartItemDto> CartItem { get; set; }
         public DbSet<PeopleAccountDto> PeopleAccount { get; set; }
         public DbSet<DestinationActivitiesDto> DestinationActivities { get; set; }
 

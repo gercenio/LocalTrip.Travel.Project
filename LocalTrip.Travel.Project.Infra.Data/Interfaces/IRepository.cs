@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace LocalTrip.Travel.Project.Infra.Data.Interfaces
@@ -14,5 +16,12 @@ namespace LocalTrip.Travel.Project.Infra.Data.Interfaces
         TEntity GetById(int id);
         void Detach(TEntity _obj);
         void Attach(TEntity _obj);
+        Task<Tuple<IEnumerable<TEntity>, int>> GetAllAsync
+        (
+            int skip,
+            int take,
+            Expression<Func<TEntity, bool>> where,
+            bool asNoTracking = true
+        );
     }
 }

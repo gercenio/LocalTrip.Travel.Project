@@ -3,7 +3,9 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Application.pdb
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Data.dll
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Data.pdb
+/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.pdb
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Domain.pdb
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Application.csprojAssemblyReference.cache
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Application.AssemblyInfoInputs.cache
@@ -11,5 +13,3 @@
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Application.csproj.CopyComplete
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Application.dll
 /Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/obj/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Application.pdb
-/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.dll
-/Users/gercenioxavier/developer/LocalTrip.Travel.Project/LocalTrip.Travel.Project.Application/bin/Debug/netcoreapp3.1/LocalTrip.Travel.Project.Infra.Service.pdb

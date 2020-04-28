@@ -9,10 +9,6 @@ using MediatR;
 
 namespace LocalTrip.Travel.Project.Application.Behaviors
 {
-    public class FailFastValidationBehavior
-    {
-        
-    }
     public class FailFastRequestBehavior <TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse> where TResponse : Response
     {

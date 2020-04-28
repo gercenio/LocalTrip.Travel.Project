@@ -171,6 +171,9 @@ namespace LocalTrip.Core.Api
             services.AddScoped<IPeopleRepository, PeopleRepository>();
             services.AddScoped<IPeopleContactRepository, PeopleContactRepository>();
             services.AddScoped<IPeopleAccountRepository, PeopleAccountRepository>();
+            services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<ICartItemRepository, CartItemRepository>();
+
             // HTTP
             services.AddHttpClient<IServiceImage, ServiceImage>();
 

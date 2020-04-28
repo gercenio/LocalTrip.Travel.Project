@@ -24,6 +24,7 @@
         </e>
         <e p="Controllers" t="Include">
           <e p="AuthenticationController.cs" t="Include" />
+          <e p="CartController.cs" t="Include" />
           <e p="DestinationController.cs" t="Include" />
           <e p="UserAccountController.cs" t="Include" />
         </e>
@@ -40,6 +41,7 @@
           <e p="AccountLoginViewModelMapper.cs" t="Include" />
           <e p="AccountRegisterViewModelMapper.cs" t="Include" />
           <e p="AccountUpdateViewModelMapper.cs" t="Include" />
+          <e p="AddCartItemViewModelMapper.cs" t="Include" />
           <e p="GetTripViewModelMapper.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -60,6 +62,7 @@
           <e p="AccountLoginViewModel.cs" t="Include" />
           <e p="AccountRegisterViewModel.cs" t="Include" />
           <e p="AccountUpdateViewModel.cs" t="Include" />
+          <e p="AddCartItemViewModel.cs" t="Include" />
           <e p="GetTripViewModel.cs" t="Include" />
         </e>
       </e>
@@ -75,6 +78,7 @@
             <e p="AccountLoginCommandRequest.cs" t="Include" />
             <e p="AccountRegisterCommandRequest.cs" t="Include" />
             <e p="AccountUpdateCommandRequest.cs" t="Include" />
+            <e p="AddItemToCartCommandRequest.cs" t="Include" />
             <e p="AuthenticationCommandRequest.cs" t="Include" />
             <e p="FindTripCommandRequest.cs" t="Include" />
           </e>
@@ -83,6 +87,7 @@
             <e p="AccountLoginCommandResponse.cs" t="Include" />
             <e p="AccountRegisterCommandResponse.cs" t="Include" />
             <e p="AccountUpdateCommandResponse.cs" t="Include" />
+            <e p="AddItemToCartCommandResponse.cs" t="Include" />
             <e p="AuthenticationCommandResponse.cs" t="Include" />
             <e p="FindTripCommandResponse.cs" t="Include" />
           </e>
@@ -96,6 +101,7 @@
             <e p="AccountLoginHandler.cs" t="Include" />
             <e p="AccountRegisterHandler.cs" t="Include" />
             <e p="AccountUpdateHandler.cs" t="Include" />
+            <e p="AddItemToCartHandler.cs" t="Include" />
             <e p="AuthenticationHandler.cs" t="Include" />
             <e p="FindTripHandler.cs" t="Include" />
           </e>
@@ -115,6 +121,7 @@
           <e p="AccountDetailValidation.cs" t="Include" />
           <e p="AccountRegisterValidation.cs" t="Include" />
           <e p="AccountUpdateValidation.cs" t="Include" />
+          <e p="AddItemToCartValidation.cs" t="Include" />
           <e p="AuthenticationValidation.cs" t="Include" />
           <e p="FindTripValidation.cs" t="Include" />
         </e>
@@ -123,6 +130,8 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Entities" t="Include">
           <e p="ApiAccount.cs" t="Include" />
+          <e p="Cart.cs" t="Include" />
+          <e p="CartItem.cs" t="Include" />
           <e p="Destination.cs" t="Include" />
           <e p="DestinationActivities.cs" t="Include" />
           <e p="DestinationImage.cs" t="Include" />
@@ -153,6 +162,8 @@
         </e>
         <e p="Dtos" t="Include">
           <e p="ApiAccountDto.cs" t="Include" />
+          <e p="CartDto.cs" t="Include" />
+          <e p="CartItemDto.cs" t="Include" />
           <e p="DestinationActivitiesDto.cs" t="Include" />
           <e p="DestinationDto.cs" t="Include" />
           <e p="PeopleAccountDto.cs" t="Include" />
@@ -161,6 +172,8 @@
         </e>
         <e p="Interfaces" t="Include">
           <e p="IApiAccountRepository.cs" t="Include" />
+          <e p="ICartItemRepository.cs" t="Include" />
+          <e p="ICartRepository.cs" t="Include" />
           <e p="IDestinationRepository.cs" t="Include" />
           <e p="IPeopleAccountRepository.cs" t="Include" />
           <e p="IPeopleContactRepository.cs" t="Include" />
@@ -170,6 +183,8 @@
         <e p="LocalTrip.Travel.Project.Infra.Data.csproj" t="IncludeRecursive" />
         <e p="Mappers" t="Include">
           <e p="ApiAccountDtoMapper.cs" t="Include" />
+          <e p="CartDtoMapper.cs" t="Include" />
+          <e p="CartItemMapper.cs" t="Include" />
           <e p="DestinationDtoMapper.cs" t="Include" />
           <e p="PeopleAccountDtoMapper.cs" t="Include" />
           <e p="PeopleContactDtoMapper.cs" t="Include" />
@@ -184,6 +199,8 @@
         </e>
         <e p="Repository" t="Include">
           <e p="ApiAccountRepository.cs" t="Include" />
+          <e p="CartItemRepository.cs" t="Include" />
+          <e p="CartRepository.cs" t="Include" />
           <e p="DestinationRepository.cs" t="Include" />
           <e p="PeopleAccountRepository.cs" t="Include" />
           <e p="PeopleContactRepository.cs" t="Include" />

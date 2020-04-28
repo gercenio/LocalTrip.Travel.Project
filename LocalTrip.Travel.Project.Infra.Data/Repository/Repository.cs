@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using LocalTrip.Travel.Project.Infra.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -59,6 +60,29 @@ namespace LocalTrip.Travel.Project.Infra.Data.Repository
         public void Attach(TEntity _obj)
         {
             DbSet.Attach(_obj);
+        }
+        
+        public virtual async Task<Tuple<IEnumerable<TEntity>, int>> GetAllAsync
+        (
+            int skip,
+            int take,
+            Expression<Func<TEntity, bool>> where,
+            bool asNoTracking = true
+        )
+        {
+            var databaseCount = await DbSet.CountAsync(where);
+            if (asNoTracking)
+                return new Tuple<IEnumerable<TEntity>, int>
+                (
+                    await DbSet.AsNoTracking().Where(where).Skip(skip).Take(take).ToListAsync(),
+                    databaseCount
+                );
+
+            return new Tuple<IEnumerable<TEntity>, int>
+            (
+                await DbSet.Where(where).Skip(skip).Take(take).ToListAsync(),
+                databaseCount
+            );
         }
         
         #endregion
