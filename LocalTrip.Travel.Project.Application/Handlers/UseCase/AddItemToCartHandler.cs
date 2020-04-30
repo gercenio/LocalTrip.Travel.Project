@@ -47,6 +47,10 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
                 return response;
             }
 
+            var result = await AddOrUpdateCartItemValuesAsync(request.CartId, request.DestinationId, request.PeopleId, request.Count);
+
+            response.Result = result;
+            
             return response;
         }
 
@@ -69,6 +73,48 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
                 return new Destination(string.Empty,0,string.Empty,string.Empty,string.Empty,string.Empty);
 
             return destinationEntity.MapToDomain();
+        }
+
+        private async Task<int> AddCartAsync(int peopleId)
+        {
+            var cartEntity = new Cart(0,peopleId);
+            
+            _cartRepository.Add(cartEntity.MapToDto());
+ 
+            var cartId = _cartRepository.GetAllAsync(0, 1, (m => m.PeopleId == peopleId)).Result.Item1
+                .Max(m => m.Id);
+            
+            return cartId;
+        }
+
+        private async Task<CartItem> AddOrUpdateCartItemValuesAsync(int cartId, int destinationId, int peopleId, int count)
+        {
+            var entity = _cartItemRepository
+                .GetAllAsync(0, 1,
+                    (m => m.CartId == cartId && m.DestinationId == destinationId)).Result
+                .Item1.SingleOrDefault();
+            
+            if (entity != null)
+            {
+                entity.Count = entity.Count + 1;
+                _cartItemRepository.Update(entity);
+                return entity.MapToDomain();
+            }
+            else
+            {
+                if (cartId == 0)
+                {
+                   cartId = await AddCartAsync(peopleId);
+                }
+                
+                var domain = new CartItem(destinationId, cartId,count);
+                _cartItemRepository.Add(domain.MapToDto());
+                
+                domain.AddDestination(await FindDestinationById(destinationId));
+                
+                return domain;
+            }
+            
         }
     }
 }

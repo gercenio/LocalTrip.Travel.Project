@@ -16,12 +16,7 @@ namespace LocalTrip.Travel.Project.Infra.Data.Dtos
         [ForeignKey("Destination")]
         public int DestinationId { get; set; }
         public DestinationDto Destination { get; set; }
-
-
-        [ForeignKey("People")]
-        public int PeopleId { get; set; }
-        public PeopleDto People { get; set; }
-
+        
         [ForeignKey("Cart")]
         public int CartId { get; set; }
         public CartDto Cart { get; set; }

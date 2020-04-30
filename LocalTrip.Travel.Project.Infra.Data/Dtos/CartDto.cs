@@ -10,6 +10,10 @@ namespace LocalTrip.Travel.Project.Infra.Data.Dtos
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        
+        [ForeignKey("People")]
+        public int PeopleId { get; set; }
+        public PeopleDto People { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime InsertAt { get; set; }
         public DateTime? UpdateAt { get; set; }

@@ -81,6 +81,7 @@
             <e p="AddItemToCartCommandRequest.cs" t="Include" />
             <e p="AuthenticationCommandRequest.cs" t="Include" />
             <e p="FindTripCommandRequest.cs" t="Include" />
+            <e p="GetCartItemByCartIdCommandRequest.cs" t="Include" />
           </e>
           <e p="Response" t="Include">
             <e p="AccountDetailCommandResponse.cs" t="Include" />
@@ -90,6 +91,7 @@
             <e p="AddItemToCartCommandResponse.cs" t="Include" />
             <e p="AuthenticationCommandResponse.cs" t="Include" />
             <e p="FindTripCommandResponse.cs" t="Include" />
+            <e p="GetCartItemByCartIdCommandResponse.cs" t="Include" />
           </e>
         </e>
         <e p="Core" t="Include">
@@ -104,6 +106,7 @@
             <e p="AddItemToCartHandler.cs" t="Include" />
             <e p="AuthenticationHandler.cs" t="Include" />
             <e p="FindTripHandler.cs" t="Include" />
+            <e p="GetCartItemByCartIdHandler.cs" t="Include" />
           </e>
         </e>
         <e p="LocalTrip.Travel.Project.Application.csproj" t="IncludeRecursive" />

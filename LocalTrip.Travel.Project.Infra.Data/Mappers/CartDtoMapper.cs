@@ -9,8 +9,11 @@ namespace LocalTrip.Travel.Project.Infra.Data.Mappers
         => new CartDto()
         {
             Id = entity.Id,
+            PeopleId =  entity.PeopleId,
             CreatedDate = entity.CreatedDate
         };
         
+        public static Cart MapToDomain(this CartDto dto)
+        => new Cart(dto.Id,dto.PeopleId);
     }
 }

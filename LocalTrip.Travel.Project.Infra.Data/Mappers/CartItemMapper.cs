@@ -11,8 +11,10 @@ namespace LocalTrip.Travel.Project.Infra.Data.Mappers
             Id = entity.Id,
             CartId = entity.CartId,
             DestinationId = entity.DestinationId,
-            PeopleId = entity.PeopleId,
             Count = entity.Count
         };
+        
+        public static CartItem MapToDomain(this CartItemDto dto)
+        => new CartItem(dto.DestinationId,dto.CartId,dto.Count);
     }
 }
