@@ -32,7 +32,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
 
             var response = new AddItemToCartCommandResponse();
             
-            var peopleEntity = await FindPeopleById(request.PeopleId);
+            var peopleEntity = await FindPeopleByIdAsync(request.PeopleId);
 
             if (string.IsNullOrEmpty(peopleEntity.Document))
             {
@@ -40,7 +40,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
                 return response;
             }
 
-            var destinationEntity = await FindDestinationById(request.DestinationId);
+            var destinationEntity = await FindDestinationByIdAsync(request.DestinationId);
             if (string.IsNullOrEmpty(destinationEntity.Name))
             {
                 response.AddError("Destino não encontrado, por favor verifique !!!");
@@ -54,7 +54,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
             return response;
         }
 
-        private async Task<People> FindPeopleById(int PeopleId)
+        private async Task<People> FindPeopleByIdAsync(int PeopleId)
         {
             var peopleEntity = _peopleRepository.GetAllAsync(0, 1, (m => m.Id == PeopleId)).Result.Item1
                 .SingleOrDefault();
@@ -64,7 +64,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
             return peopleEntity.MapToDomain();
         }
 
-        private async Task<Destination> FindDestinationById(int DestinationId)
+        private async Task<Destination> FindDestinationByIdAsync(int DestinationId)
         {
             var destinationEntity = _destinationRepository.GetAllAsync(0, 1, (m => m.Id == DestinationId)).Result.Item1
                 .SingleOrDefault();
@@ -110,7 +110,7 @@ namespace LocalTrip.Travel.Project.Application.Handlers.UseCase
                 var domain = new CartItem(destinationId, cartId,count);
                 _cartItemRepository.Add(domain.MapToDto());
                 
-                domain.AddDestination(await FindDestinationById(destinationId));
+                domain.AddDestination(await FindDestinationByIdAsync(destinationId));
                 
                 return domain;
             }

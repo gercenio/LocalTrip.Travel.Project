@@ -35,5 +35,17 @@ namespace LocalTrip.Core.Api.Controllers
             return Ok(_mediator.Send(new GetCartItemByCartIdCommandRequest(id)));
         }
 
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromQuery] int id)
+        {
+            return Ok(_mediator.Send(new RemoveCartItemCommandRequest(id)));
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] UpdateCartItemViewModel model)
+        {
+            return Ok(_mediator.Send(model.MapToCommand()));
+        }
+
     }
 }

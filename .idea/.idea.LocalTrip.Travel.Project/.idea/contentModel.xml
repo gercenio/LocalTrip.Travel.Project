@@ -43,6 +43,7 @@
           <e p="AccountUpdateViewModelMapper.cs" t="Include" />
           <e p="AddCartItemViewModelMapper.cs" t="Include" />
           <e p="GetTripViewModelMapper.cs" t="Include" />
+          <e p="UpdateCartItemViewModelMapper.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -64,6 +65,7 @@
           <e p="AccountUpdateViewModel.cs" t="Include" />
           <e p="AddCartItemViewModel.cs" t="Include" />
           <e p="GetTripViewModel.cs" t="Include" />
+          <e p="UpdateCartItemViewModel.cs" t="Include" />
         </e>
       </e>
       <e p="LocalTrip.Travel.Project.Application" t="IncludeRecursive">
@@ -82,6 +84,8 @@
             <e p="AuthenticationCommandRequest.cs" t="Include" />
             <e p="FindTripCommandRequest.cs" t="Include" />
             <e p="GetCartItemByCartIdCommandRequest.cs" t="Include" />
+            <e p="RemoveCartItemCommandRequest.cs" t="Include" />
+            <e p="UpdateCartItemCommandRequest.cs" t="Include" />
           </e>
           <e p="Response" t="Include">
             <e p="AccountDetailCommandResponse.cs" t="Include" />
@@ -92,6 +96,8 @@
             <e p="AuthenticationCommandResponse.cs" t="Include" />
             <e p="FindTripCommandResponse.cs" t="Include" />
             <e p="GetCartItemByCartIdCommandResponse.cs" t="Include" />
+            <e p="RemoveCartItemCommandResponse.cs" t="Include" />
+            <e p="UpdateCartItemCommandResponse.cs" t="Include" />
           </e>
         </e>
         <e p="Core" t="Include">
@@ -107,6 +113,8 @@
             <e p="AuthenticationHandler.cs" t="Include" />
             <e p="FindTripHandler.cs" t="Include" />
             <e p="GetCartItemByCartIdHandler.cs" t="Include" />
+            <e p="RemoveCartItemHandler.cs" t="Include" />
+            <e p="UpdateCartItemHandler.cs" t="Include" />
           </e>
         </e>
         <e p="LocalTrip.Travel.Project.Application.csproj" t="IncludeRecursive" />
