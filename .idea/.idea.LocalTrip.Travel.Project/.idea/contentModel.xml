@@ -26,6 +26,7 @@
           <e p="AuthenticationController.cs" t="Include" />
           <e p="CartController.cs" t="Include" />
           <e p="DestinationController.cs" t="Include" />
+          <e p="PaymentController.cs" t="Include" />
           <e p="UserAccountController.cs" t="Include" />
         </e>
         <e p="Enuns" t="Include">
@@ -83,6 +84,7 @@
             <e p="AddItemToCartCommandRequest.cs" t="Include" />
             <e p="AuthenticationCommandRequest.cs" t="Include" />
             <e p="FindTripCommandRequest.cs" t="Include" />
+            <e p="GetAllPaymentCommandRequest.cs" t="Include" />
             <e p="GetCartItemByCartIdCommandRequest.cs" t="Include" />
             <e p="RemoveCartItemCommandRequest.cs" t="Include" />
             <e p="UpdateCartItemCommandRequest.cs" t="Include" />
@@ -95,6 +97,7 @@
             <e p="AddItemToCartCommandResponse.cs" t="Include" />
             <e p="AuthenticationCommandResponse.cs" t="Include" />
             <e p="FindTripCommandResponse.cs" t="Include" />
+            <e p="GetAllPaymentCommandResponse.cs" t="Include" />
             <e p="GetCartItemByCartIdCommandResponse.cs" t="Include" />
             <e p="RemoveCartItemCommandResponse.cs" t="Include" />
             <e p="UpdateCartItemCommandResponse.cs" t="Include" />
@@ -112,6 +115,7 @@
             <e p="AddItemToCartHandler.cs" t="Include" />
             <e p="AuthenticationHandler.cs" t="Include" />
             <e p="FindTripHandler.cs" t="Include" />
+            <e p="GetAllPaymentHandler.cs" t="Include" />
             <e p="GetCartItemByCartIdHandler.cs" t="Include" />
             <e p="RemoveCartItemHandler.cs" t="Include" />
             <e p="UpdateCartItemHandler.cs" t="Include" />
@@ -146,6 +150,9 @@
           <e p="Destination.cs" t="Include" />
           <e p="DestinationActivities.cs" t="Include" />
           <e p="DestinationImage.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="OrderItem.cs" t="Include" />
+          <e p="Payment.cs" t="Include" />
           <e p="People.cs" t="Include" />
           <e p="PeopleAccount.cs" t="Include" />
           <e p="PeopleContact.cs" t="Include" />
@@ -153,6 +160,7 @@
         <e p="Enuns" t="Include">
           <e p="AccountType.cs" t="Include" />
           <e p="ContactType.cs" t="Include" />
+          <e p="OrderStatusType.cs" t="Include" />
           <e p="PeopleType.cs" t="Include" />
         </e>
         <e p="LocalTrip.Travel.Project.Domain.csproj" t="IncludeRecursive" />
@@ -177,6 +185,7 @@
           <e p="CartItemDto.cs" t="Include" />
           <e p="DestinationActivitiesDto.cs" t="Include" />
           <e p="DestinationDto.cs" t="Include" />
+          <e p="PaymentDto.cs" t="Include" />
           <e p="PeopleAccountDto.cs" t="Include" />
           <e p="PeopleContactDto.cs" t="Include" />
           <e p="PeopleDto.cs" t="Include" />
@@ -186,6 +195,7 @@
           <e p="ICartItemRepository.cs" t="Include" />
           <e p="ICartRepository.cs" t="Include" />
           <e p="IDestinationRepository.cs" t="Include" />
+          <e p="IPaymentRepository.cs" t="Include" />
           <e p="IPeopleAccountRepository.cs" t="Include" />
           <e p="IPeopleContactRepository.cs" t="Include" />
           <e p="IPeopleRepository.cs" t="Include" />
@@ -197,6 +207,7 @@
           <e p="CartDtoMapper.cs" t="Include" />
           <e p="CartItemMapper.cs" t="Include" />
           <e p="DestinationDtoMapper.cs" t="Include" />
+          <e p="PaymentDtoMapper.cs" t="Include" />
           <e p="PeopleAccountDtoMapper.cs" t="Include" />
           <e p="PeopleContactDtoMapper.cs" t="Include" />
           <e p="PeopleDtoMapper.cs" t="Include" />
@@ -213,6 +224,7 @@
           <e p="CartItemRepository.cs" t="Include" />
           <e p="CartRepository.cs" t="Include" />
           <e p="DestinationRepository.cs" t="Include" />
+          <e p="PaymentRepository.cs" t="Include" />
           <e p="PeopleAccountRepository.cs" t="Include" />
           <e p="PeopleContactRepository.cs" t="Include" />
           <e p="PeopleRepository.cs" t="Include" />
